@@ -21,11 +21,13 @@
 		"persistent":true
 	},
 
-	"browser_action" :{
-		"default_icon": "icon.ico",
-		"default_popup": "popup.html",
-		"default_title": "Go to Settings" 
-	},
+	"page_action": {
+        "default_icon": {
+            "19": "icon.ico",
+            "38": "icon.ico"
+        },
+
+	"options_page": "settings.html",
 
 	"permissions":[
 		"tabs",
