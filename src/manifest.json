@@ -28,7 +28,7 @@
 	},
 
 	"permissions":[
-		"activeTab",
+		"tabs",
 		"http://youtube.com/watch*"
 	]
 }
