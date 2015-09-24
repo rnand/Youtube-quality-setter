@@ -4,9 +4,21 @@
 	"name": "YouTube Quality Setter",
 	"description": "This extension automatically sets the youtube videos to a predefined quality, so that the user does not have to change the quality from 'auto'(which by default is crap).",
 	"version":"0.1.0",
+	"content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "js": [
+                "script.js"
+            ],
+            "run_at": "document_start",
+            "all_frames": false
+        }
+    ],
 	"background" :{
 		"scripts": ["background.js"],
-		"persistent":false
+		"persistent":true
 	}
 
 	"browser_action":{
